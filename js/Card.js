@@ -1,4 +1,4 @@
-class Card {
+export class Card {
   create(name, link) {
     // Создание элементов
     const placeCard = document.createElement('div'); //карточка
@@ -45,4 +45,4 @@ class Card {
       //this в данном случае равен значению объекта, на котором вызван (this.card)
     }
   }
-}
+};

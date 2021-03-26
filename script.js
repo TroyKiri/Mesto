@@ -1,3 +1,10 @@
+import {initialCards} from './js/initialCards';
+import {Card} from './js/Card';
+import {CardList} from './js/CardList';
+import {FormValidator} from './js/FormValidator';
+import {Popup} from './js/Popup';
+import {UserInfo} from './js/UserInfo';
+
 const placesList = document.querySelector('.places-list');
 const newPlaceButton = document.querySelector('.user-info__button');
 const userInfoEditButton = document.querySelector('.user-info__edit-button');

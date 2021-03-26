@@ -1,4 +1,4 @@
-class Popup {
+export class Popup {
   constructor(popup, title, image, form, card, cardList, userInfo, root) {
     this.popup = popup;
     this.title = title;
