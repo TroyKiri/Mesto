@@ -1,0 +1,28 @@
+.user-info__button {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  font-size: 30px;
+  width: 150px;
+  height: 50px;
+}
+
+.user-info__edit-button {
+  margin-top: 24px;
+  width: 38px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 980px) {
+  .user-info__button {
+    position: static;
+    margin-bottom: 40px;
+  }
+  .user-info__edit-button {
+    text-align: center;
+  }
+}
