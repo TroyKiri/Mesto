@@ -62,8 +62,6 @@ export class Popup {
       this.popup.classList.add('popup_is-opened');
       // заполнение содержимым и удаление полей с ошибками
       this.title.textContent = 'Редактировать профиль';
-      this.form.removeAttribute('name');
-      this.form.setAttribute('name', 'profile');
       Array.from(this.elements).forEach((element, index) => {
         switch (index) {
           case 0: element.setAttribute('placeholder', 'Имя');

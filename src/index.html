@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -29,7 +29,7 @@
 
     <div class="popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title"></h3>
         <form class="popup__form" name="form">
           <input type="text" name="name" class="popup__input popup__input_type_name popup__input_valid" minlength="2" maxlength="30" required>
@@ -44,13 +44,13 @@
     <div class="popup" id="popup-image">
       <div class="popup__content-image">
         <img class="popup__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
       </div>
     </div>
 
   </div>
 
-  <script type="module" src="/script.js"></script>
+  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 
 </body>
 </html>
